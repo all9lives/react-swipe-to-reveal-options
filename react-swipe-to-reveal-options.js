@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 ;(function (root, factory) {
   if (typeof module !== "undefined" && module.exports) {
     module.exports = factory(require("react"));
@@ -41,17 +42,17 @@
 
   var Swipeable = React.createClass({ displayName: "Swipeable",
     propTypes: {
-      onSwiped: React.PropTypes.func,
-      onSwipingUp: React.PropTypes.func,
-      onSwipingRight: React.PropTypes.func,
-      onSwipingDown: React.PropTypes.func,
-      onSwipingLeft: React.PropTypes.func,
-      onSwipedUp: React.PropTypes.func,
-      onSwipedRight: React.PropTypes.func,
-      onSwipedDown: React.PropTypes.func,
-      onSwipedLeft: React.PropTypes.func,
-      flickThreshold: React.PropTypes.number,
-      delta: React.PropTypes.number
+      onSwiped: PropTypes.func,
+      onSwipingUp: PropTypes.func,
+      onSwipingRight: PropTypes.func,
+      onSwipingDown: PropTypes.func,
+      onSwipingLeft: PropTypes.func,
+      onSwipedUp: PropTypes.func,
+      onSwipedRight: PropTypes.func,
+      onSwipedDown: PropTypes.func,
+      onSwipedLeft: PropTypes.func,
+      flickThreshold: PropTypes.number,
+      delta: PropTypes.number
     },
 
     getInitialState: function getInitialState() {
@@ -190,22 +191,22 @@
     displayName: "SwipeToRevealOptions",
 
     propTypes: {
-      rightOptions: React.PropTypes.array,
-      leftOptions: React.PropTypes.array,
-      className: React.PropTypes.string,
-      actionThreshold: React.PropTypes.number,
-      visibilityThreshold: React.PropTypes.number,
-      transitionBackTimeout: React.PropTypes.number,
-      callActionWhenSwipingFarLeft: React.PropTypes.bool,
-      callActionWhenSwipingFarRight: React.PropTypes.bool,
-      transitionBackOnRightClick: React.PropTypes.bool,
-      transitionBackOnLeftClick: React.PropTypes.bool,
-      closeOthers: React.PropTypes.func,
-      onRightClick: React.PropTypes.func,
-      onLeftClick: React.PropTypes.func,
-      onReveal: React.PropTypes.func,
-      maxItemWidth: React.PropTypes.number,
-      parentWidth: React.PropTypes.number
+      rightOptions: PropTypes.array,
+      leftOptions: PropTypes.array,
+      className: PropTypes.string,
+      actionThreshold: PropTypes.number,
+      visibilityThreshold: PropTypes.number,
+      transitionBackTimeout: PropTypes.number,
+      callActionWhenSwipingFarLeft: PropTypes.bool,
+      callActionWhenSwipingFarRight: PropTypes.bool,
+      transitionBackOnRightClick: PropTypes.bool,
+      transitionBackOnLeftClick: PropTypes.bool,
+      closeOthers: PropTypes.func,
+      onRightClick: PropTypes.func,
+      onLeftClick: PropTypes.func,
+      onReveal: PropTypes.func,
+      maxItemWidth: PropTypes.number,
+      parentWidth: PropTypes.number
     },
 
     getInitialState: function getInitialState() {
