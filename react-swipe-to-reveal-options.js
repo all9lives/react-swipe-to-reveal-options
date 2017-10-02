@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
+
 ;(function (root, factory) {
   if (typeof module !== "undefined" && module.exports) {
     module.exports = factory(require("react"));
@@ -40,7 +42,7 @@ import PropTypes from 'prop-types';
     };
   }
 
-  var Swipeable = React.createClass({ displayName: "Swipeable",
+  var Swipeable = createClass({ displayName: "Swipeable",
     propTypes: {
       onSwiped: PropTypes.func,
       onSwipingUp: PropTypes.func,
@@ -187,7 +189,7 @@ import PropTypes from 'prop-types';
     }
   });
 
-  var SwipeToRevealOptions = React.createClass({
+  var SwipeToRevealOptions = createClass({
     displayName: "SwipeToRevealOptions",
 
     propTypes: {
